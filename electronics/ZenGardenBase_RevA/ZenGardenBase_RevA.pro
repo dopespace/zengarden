@@ -1,4 +1,4 @@
-update=3/9/2017 6:35:42 PM
+update=3/10/2017 8:08:36 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -57,6 +57,8 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Sync/Projects/KiCad/KiCadParts.pretty/myParts
+LibName31=C:/Sync/Projects/KiCad/KiCadParts.pretty/pololu_a4988
+LibName32=C:/Sync/Projects/KiCad/KiCadParts.pretty/DRV8825
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
