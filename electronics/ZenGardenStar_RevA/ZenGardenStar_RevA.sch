@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ZenGardenStar"
-Date "2017-03-09"
+Date "2017-03-11"
 Rev "A"
 Comp "D.O.P.E."
 Comment1 "Matthew Swarts"
@@ -50,7 +50,7 @@ U 1 1 58BB729C
 P 1925 1850
 F 0 "P1" H 1925 2000 50  0000 C CNN
 F 1 "CONN_01X02" V 2025 1850 50  0000 C CNN
-F 2 "Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 1925 1850 50  0001 C CNN
+F 2 "Connect:AK300-2" H 1925 1850 50  0001 C CNN
 F 3 "" H 1925 1850 50  0000 C CNN
 	1    1925 1850
 	1    0    0    -1  
@@ -95,25 +95,25 @@ $EndComp
 $Comp
 L ArduinoProMini328 U3
 U 1 1 58BB7402
-P 6475 5025
-F 0 "U3" H 6475 5025 60  0000 C CNN
-F 1 "ArduinoProMini328" H 6475 4400 60  0000 C CNN
-F 2 "MyKiCadParts:ArduinoProMini328" H 6475 5025 60  0001 C CNN
-F 3 "" H 6475 5025 60  0001 C CNN
-	1    6475 5025
+P 6550 4750
+F 0 "U3" H 6550 4750 60  0000 C CNN
+F 1 "ArduinoProMini328" H 6550 4125 60  0000 C CNN
+F 2 "MyKiCadParts:ArduinoProMini328" H 6550 4750 60  0001 C CNN
+F 3 "" H 6550 4750 60  0001 C CNN
+	1    6550 4750
 	1    0    0    -1  
 $EndComp
 Text GLabel 7875 2275 0    60   Input ~ 0
 V33
-Text GLabel 7150 5275 2    60   Input ~ 0
+Text GLabel 7225 5000 2    60   Input ~ 0
 SCK
-Text GLabel 7150 5375 2    60   Input ~ 0
+Text GLabel 7225 5100 2    60   Input ~ 0
 MISO
-Text GLabel 7150 5475 2    60   Input ~ 0
+Text GLabel 7225 5200 2    60   Input ~ 0
 MOSI
-Text GLabel 7150 5575 2    60   Input ~ 0
+Text GLabel 7225 5300 2    60   Input ~ 0
 CSN
-Text GLabel 5775 5575 0    60   Input ~ 0
+Text GLabel 5850 5300 0    60   Input ~ 0
 CE
 Text GLabel 9550 2125 2    60   Input ~ 0
 CE
@@ -125,23 +125,23 @@ Text GLabel 8450 1975 0    60   Input ~ 0
 MISO
 Text GLabel 9550 1825 2    60   Input ~ 0
 MOSI
-Text GLabel 7150 4575 2    60   Input ~ 0
+Text GLabel 7225 4300 2    60   Input ~ 0
 GND
 Text GLabel 9550 2275 2    60   Input ~ 0
 GND
 Text GLabel 8450 2850 2    60   Input ~ 0
 GND
 Text Notes 8525 1550 0    60   ~ 0
-Bluetooth Module\nuses the SPI interface\nrequires 3.3V voltage supply
-Text GLabel 5775 4975 0    60   Input ~ 0
+Bluetooth Module\nuses the SPI interface\nrequires 3.3V voltage supply\npins are 5V tolerant though
+Text GLabel 5850 4700 0    60   Input ~ 0
 PWM_R
-Text GLabel 5775 5175 0    60   Input ~ 0
+Text GLabel 5850 4900 0    60   Input ~ 0
 PWM_G
-Text GLabel 5775 5275 0    60   Input ~ 0
+Text GLabel 5850 5000 0    60   Input ~ 0
 PWM_B
-Text GLabel 5775 4775 0    60   Input ~ 0
+Text GLabel 5850 4500 0    60   Input ~ 0
 GND
-Text GLabel 7150 4775 2    60   Input ~ 0
+Text GLabel 7225 4500 2    60   Input ~ 0
 V50
 Text GLabel 6575 1475 0    60   Input ~ 0
 V50
@@ -169,7 +169,7 @@ F 3 "" H 3850 1800 50  0000 C CNN
 	1    3850 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3450 1450 0    60   Input ~ 0
+Text GLabel 3075 1450 0    60   Input ~ 0
 V36
 Text GLabel 4875 2525 0    60   Input ~ 0
 GND
@@ -286,7 +286,7 @@ F 3 "" H 3625 3650 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 3000 3050 0    60   ~ 0
-PMEG6030EP,115 - SOD128
+PMEG6030EP,115 - SOD128   OR
 Text Notes 3000 3150 0    60   ~ 0
 SR306-TP - DO-201AD
 $Comp
@@ -521,42 +521,42 @@ $EndComp
 $Comp
 L CONN_01X03 P3
 U 1 1 58C21485
-P 8550 4550
-F 0 "P3" H 8550 4750 50  0000 C CNN
-F 1 "CONN_PIR_0" V 8650 4550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8550 4550 50  0001 C CNN
-F 3 "" H 8550 4550 50  0000 C CNN
-	1    8550 4550
+P 8950 4075
+F 0 "P3" H 8950 4275 50  0000 C CNN
+F 1 "CONN_PIR_0" V 9050 4075 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 8950 4075 50  0001 C CNN
+F 3 "" H 8950 4075 50  0000 C CNN
+	1    8950 4075
 	1    0    0    -1  
 $EndComp
-Text GLabel 8350 4650 0    60   Input ~ 0
+Text GLabel 8750 4175 0    60   Input ~ 0
 V50
-Text GLabel 8350 4450 0    60   Input ~ 0
+Text GLabel 8750 3975 0    60   Input ~ 0
 GND
-Text GLabel 8350 4550 0    60   Input ~ 0
+Text GLabel 8750 4075 0    60   Input ~ 0
 PIR_0
-Text GLabel 5775 5375 0    60   Input ~ 0
+Text GLabel 5850 5100 0    60   Input ~ 0
 PIR_0
-Text GLabel 5775 5475 0    60   Input ~ 0
+Text GLabel 5850 5200 0    60   Input ~ 0
 PIR_1
 $Comp
 L CONN_01X03 P4
 U 1 1 58C22968
-P 8550 5125
-F 0 "P4" H 8550 5325 50  0000 C CNN
-F 1 "CONN_PIR_1" V 8650 5125 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8550 5125 50  0001 C CNN
-F 3 "" H 8550 5125 50  0000 C CNN
-	1    8550 5125
+P 8950 4650
+F 0 "P4" H 8950 4850 50  0000 C CNN
+F 1 "CONN_PIR_1" V 9050 4650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 8950 4650 50  0001 C CNN
+F 3 "" H 8950 4650 50  0000 C CNN
+	1    8950 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8350 5225 0    60   Input ~ 0
+Text GLabel 8750 4750 0    60   Input ~ 0
 V50
-Text GLabel 8350 5025 0    60   Input ~ 0
+Text GLabel 8750 4550 0    60   Input ~ 0
 GND
-Text GLabel 8350 5125 0    60   Input ~ 0
+Text GLabel 8750 4650 0    60   Input ~ 0
 PIR_1
-Text Notes 7925 4200 0    60   ~ 0
+Text Notes 8325 3725 0    60   ~ 0
 PIR Sensor 5-20V Input\n3.3V Digital Output
 $Comp
 L CONN_01X02 P7
@@ -564,7 +564,7 @@ U 1 1 58C25032
 P 4525 5000
 F 0 "P7" H 4525 5150 50  0000 C CNN
 F 1 "CONN_G" V 4625 5000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4525 5000 50  0001 C CNN
+F 2 "Connect:AK300-2" H 4525 5000 50  0001 C CNN
 F 3 "" H 4525 5000 50  0000 C CNN
 	1    4525 5000
 	1    0    0    1   
@@ -575,7 +575,7 @@ U 1 1 58C252A6
 P 4500 6500
 F 0 "P6" H 4500 6650 50  0000 C CNN
 F 1 "CONN_B" V 4600 6500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4500 6500 50  0001 C CNN
+F 2 "Connect:AK300-2" H 4500 6500 50  0001 C CNN
 F 3 "" H 4500 6500 50  0000 C CNN
 	1    4500 6500
 	1    0    0    1   
@@ -585,8 +585,8 @@ L INDUCTOR_SMALL L1
 U 1 1 58C256B5
 P 3925 3250
 F 0 "L1" H 3925 3350 50  0000 C CNN
-F 1 "INDUCTOR_SMALL" H 3925 3200 50  0000 C CNN
-F 2 "Inductors:SELF-WE-PD-XXL" H 3925 3250 50  0001 C CNN
+F 1 "47uH 1A" H 3925 3200 50  0000 C CNN
+F 2 "MyKiCadParts:TAIYO_YUDEN_IND_6045" H 3925 3250 50  0001 C CNN
 F 3 "" H 3925 3250 50  0000 C CNN
 	1    3925 3250
 	1    0    0    -1  
@@ -596,8 +596,8 @@ L INDUCTOR_SMALL L2
 U 1 1 58C25C5A
 P 3925 4750
 F 0 "L2" H 3925 4850 50  0000 C CNN
-F 1 "INDUCTOR_SMALL" H 3925 4700 50  0000 C CNN
-F 2 "Inductors:SELF-WE-PD-XXL" H 3925 4750 50  0001 C CNN
+F 1 "47uH 1A" H 3925 4700 50  0000 C CNN
+F 2 "MyKiCadParts:TAIYO_YUDEN_IND_6045" H 3925 4750 50  0001 C CNN
 F 3 "" H 3925 4750 50  0000 C CNN
 	1    3925 4750
 	1    0    0    -1  
@@ -607,8 +607,8 @@ L INDUCTOR_SMALL L3
 U 1 1 58C25F2A
 P 3925 6250
 F 0 "L3" H 3925 6350 50  0000 C CNN
-F 1 "INDUCTOR_SMALL" H 3925 6200 50  0000 C CNN
-F 2 "Inductors:SELF-WE-PD-XXL" H 3925 6250 50  0001 C CNN
+F 1 "47uH 1A" H 3925 6200 50  0000 C CNN
+F 2 "MyKiCadParts:TAIYO_YUDEN_IND_6045" H 3925 6250 50  0001 C CNN
 F 3 "" H 3925 6250 50  0000 C CNN
 	1    3925 6250
 	1    0    0    -1  
@@ -638,7 +638,7 @@ Connection ~ 4925 2000
 Wire Wire Line
 	4925 2350 4925 2525
 Wire Wire Line
-	3450 1450 4025 1450
+	3075 1450 4025 1450
 Wire Wire Line
 	4825 1450 5475 1450
 Wire Wire Line
@@ -650,7 +650,7 @@ Connection ~ 5200 1450
 Wire Wire Line
 	5200 2400 5200 1950
 Wire Wire Line
-	3625 2400 5200 2400
+	3325 2400 5200 2400
 Wire Wire Line
 	3850 2400 3850 1950
 Connection ~ 4925 2400
@@ -826,7 +826,7 @@ U 1 1 58C23CFD
 P 4475 3500
 F 0 "P5" H 4475 3650 50  0000 C CNN
 F 1 "CONN_R" V 4575 3500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4475 3500 50  0001 C CNN
+F 2 "Connect:AK300-2" H 4475 3500 50  0001 C CNN
 F 3 "" H 4475 3500 50  0000 C CNN
 	1    4475 3500
 	1    0    0    1   
@@ -886,4 +886,82 @@ Connection ~ 3625 5625
 Wire Wire Line
 	3950 5250 3950 5050
 Connection ~ 4225 5050
+$Comp
+L CP1 C12
+U 1 1 58C46F27
+P 3325 2075
+F 0 "C12" H 3350 2175 50  0000 L CNN
+F 1 "100uF 50V" H 3350 1975 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L13_P3.8" H 3325 2075 50  0001 C CNN
+F 3 "" H 3325 2075 50  0000 C CNN
+	1    3325 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 1925 3325 1450
+Connection ~ 3325 1450
+Wire Wire Line
+	3325 2225 3325 2400
+Connection ~ 3625 2400
+$Comp
+L CONN_01X03 P8
+U 1 1 58C4CE75
+P 8975 5225
+F 0 "P8" H 8975 5425 50  0000 C CNN
+F 1 "CONN_A0" V 9075 5225 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8975 5225 50  0001 C CNN
+F 3 "" H 8975 5225 50  0000 C CNN
+	1    8975 5225
+	1    0    0    -1  
+$EndComp
+Text GLabel 8775 5125 0    60   Input ~ 0
+GND
+Text GLabel 8775 5225 0    60   Input ~ 0
+V50
+Text GLabel 8775 5325 0    60   Input ~ 0
+A0
+Text GLabel 7225 4900 2    60   Input ~ 0
+A0
+Text GLabel 7225 4800 2    60   Input ~ 0
+A1
+$Comp
+L CONN_01X03 P9
+U 1 1 58C4E897
+P 8975 5650
+F 0 "P9" H 8975 5850 50  0000 C CNN
+F 1 "CONN_A1" V 9075 5650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8975 5650 50  0001 C CNN
+F 3 "" H 8975 5650 50  0000 C CNN
+	1    8975 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8775 5550 0    60   Input ~ 0
+GND
+Text GLabel 8775 5750 0    60   Input ~ 0
+A1
+Text GLabel 8775 5650 0    60   Input ~ 0
+V50
+$Comp
+L CONN_01X04 P10
+U 1 1 58C51FAA
+P 9825 5625
+F 0 "P10" H 9825 5875 50  0000 C CNN
+F 1 "CONN_I2C" V 9925 5625 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 9825 5625 50  0001 C CNN
+F 3 "" H 9825 5625 50  0000 C CNN
+	1    9825 5625
+	1    0    0    -1  
+$EndComp
+Text GLabel 9625 5475 0    60   Input ~ 0
+GND
+Text GLabel 9625 5575 0    60   Input ~ 0
+V50
+Text GLabel 9625 5675 0    60   Input ~ 0
+SDA
+Text GLabel 9625 5775 0    60   Input ~ 0
+SCL
+Text GLabel 6600 5750 3    60   Input ~ 0
+SDA
+Text GLabel 6700 5750 3    60   Input ~ 0
+SCL
 $EndSCHEMATC
