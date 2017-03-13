@@ -524,7 +524,7 @@ U 1 1 58C21485
 P 8950 4075
 F 0 "P3" H 8950 4275 50  0000 C CNN
 F 1 "CONN_PIR_0" V 9050 4075 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 8950 4075 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8950 4075 50  0001 C CNN
 F 3 "" H 8950 4075 50  0000 C CNN
 	1    8950 4075
 	1    0    0    -1  
@@ -535,9 +535,9 @@ Text GLabel 8750 3975 0    60   Input ~ 0
 GND
 Text GLabel 8750 4075 0    60   Input ~ 0
 PIR_0
-Text GLabel 5850 5100 0    60   Input ~ 0
+Text GLabel 7225 4700 2    60   Input ~ 0
 PIR_0
-Text GLabel 5850 5200 0    60   Input ~ 0
+Text GLabel 7225 4600 2    60   Input ~ 0
 PIR_1
 $Comp
 L CONN_01X03 P4
@@ -545,7 +545,7 @@ U 1 1 58C22968
 P 8950 4650
 F 0 "P4" H 8950 4850 50  0000 C CNN
 F 1 "CONN_PIR_1" V 9050 4650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 8950 4650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8950 4650 50  0001 C CNN
 F 3 "" H 8950 4650 50  0000 C CNN
 	1    8950 4650
 	1    0    0    -1  
@@ -567,7 +567,7 @@ F 1 "CONN_G" V 4625 5000 50  0000 C CNN
 F 2 "Connect:AK300-2" H 4525 5000 50  0001 C CNN
 F 3 "" H 4525 5000 50  0000 C CNN
 	1    4525 5000
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P6
@@ -578,7 +578,7 @@ F 1 "CONN_B" V 4600 6500 50  0000 C CNN
 F 2 "Connect:AK300-2" H 4500 6500 50  0001 C CNN
 F 3 "" H 4500 6500 50  0000 C CNN
 	1    4500 6500
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L INDUCTOR_SMALL L1
@@ -829,7 +829,7 @@ F 1 "CONN_R" V 4575 3500 50  0000 C CNN
 F 2 "Connect:AK300-2" H 4475 3500 50  0001 C CNN
 F 3 "" H 4475 3500 50  0000 C CNN
 	1    4475 3500
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4225 3550 4225 4300

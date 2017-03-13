@@ -524,7 +524,7 @@ U 1 1 58C21485
 P 8950 4075
 F 0 "P3" H 8950 4275 50  0000 C CNN
 F 1 "CONN_PIR_0" V 9050 4075 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 8950 4075 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8950 4075 50  0001 C CNN
 F 3 "" H 8950 4075 50  0000 C CNN
 	1    8950 4075
 	1    0    0    -1  
@@ -535,9 +535,9 @@ Text GLabel 8750 3975 0    60   Input ~ 0
 GND
 Text GLabel 8750 4075 0    60   Input ~ 0
 PIR_0
-Text GLabel 5850 5100 0    60   Input ~ 0
+Text GLabel 7225 4700 2    60   Input ~ 0
 PIR_0
-Text GLabel 5850 5200 0    60   Input ~ 0
+Text GLabel 7225 4600 2    60   Input ~ 0
 PIR_1
 $Comp
 L CONN_01X03 P4
@@ -545,7 +545,7 @@ U 1 1 58C22968
 P 8950 4650
 F 0 "P4" H 8950 4850 50  0000 C CNN
 F 1 "CONN_PIR_1" V 9050 4650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 8950 4650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8950 4650 50  0001 C CNN
 F 3 "" H 8950 4650 50  0000 C CNN
 	1    8950 4650
 	1    0    0    -1  
@@ -666,7 +666,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 3550 2950 3550
 Wire Wire Line
-	2950 4125 2950 3550
+	2950 3550 2950 4125
 Wire Wire Line
 	2225 3975 2225 4225
 Wire Wire Line
@@ -717,7 +717,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 5050 2950 5050
 Wire Wire Line
-	2950 5625 2950 5050
+	2950 5050 2950 5625
 Wire Wire Line
 	2225 5475 2225 5725
 Wire Wire Line
@@ -762,7 +762,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 6550 2950 6550
 Wire Wire Line
-	2950 7125 2950 6550
+	2950 6550 2950 7125
 Wire Wire Line
 	2225 6975 2225 7225
 Wire Wire Line
@@ -916,9 +916,9 @@ F 3 "" H 8975 5225 50  0000 C CNN
 $EndComp
 Text GLabel 8775 5125 0    60   Input ~ 0
 GND
-Text GLabel 8775 5325 0    60   Input ~ 0
-V50
 Text GLabel 8775 5225 0    60   Input ~ 0
+V50
+Text GLabel 8775 5325 0    60   Input ~ 0
 A0
 Text GLabel 7225 4900 2    60   Input ~ 0
 A0
@@ -937,9 +937,9 @@ F 3 "" H 8975 5650 50  0000 C CNN
 $EndComp
 Text GLabel 8775 5550 0    60   Input ~ 0
 GND
-Text GLabel 8775 5650 0    60   Input ~ 0
-A1
 Text GLabel 8775 5750 0    60   Input ~ 0
+A1
+Text GLabel 8775 5650 0    60   Input ~ 0
 V50
 $Comp
 L CONN_01X04 P10
@@ -954,11 +954,11 @@ F 3 "" H 9825 5625 50  0000 C CNN
 $EndComp
 Text GLabel 9625 5475 0    60   Input ~ 0
 GND
-Text GLabel 9625 5775 0    60   Input ~ 0
-V50
 Text GLabel 9625 5575 0    60   Input ~ 0
-SDA
+V50
 Text GLabel 9625 5675 0    60   Input ~ 0
+SDA
+Text GLabel 9625 5775 0    60   Input ~ 0
 SCL
 Text GLabel 6600 5750 3    60   Input ~ 0
 SDA
