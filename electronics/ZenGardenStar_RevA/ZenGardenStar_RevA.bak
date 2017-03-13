@@ -567,7 +567,7 @@ F 1 "CONN_G" V 4625 5000 50  0000 C CNN
 F 2 "Connect:AK300-2" H 4525 5000 50  0001 C CNN
 F 3 "" H 4525 5000 50  0000 C CNN
 	1    4525 5000
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P6
@@ -578,7 +578,7 @@ F 1 "CONN_B" V 4600 6500 50  0000 C CNN
 F 2 "Connect:AK300-2" H 4500 6500 50  0001 C CNN
 F 3 "" H 4500 6500 50  0000 C CNN
 	1    4500 6500
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L INDUCTOR_SMALL L1
@@ -829,7 +829,7 @@ F 1 "CONN_R" V 4575 3500 50  0000 C CNN
 F 2 "Connect:AK300-2" H 4475 3500 50  0001 C CNN
 F 3 "" H 4475 3500 50  0000 C CNN
 	1    4475 3500
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4225 3550 4225 4300
