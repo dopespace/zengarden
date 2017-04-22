@@ -1,0 +1,156 @@
+//dirPin: 12, 10, 8, 6, 4
+//stepperPin: 13, 11, 9, 7, 5
+//false: down
+//true: up
+
+int dirPin_M1 = 12;
+int stepperPin_M1 = 13;
+int dirPin_M2 = 10;
+int stepperPin_M2 = 11;
+int dirPin_M3 = 8;
+int stepperPin_M3 = 9;
+int dirPin_M4 = 6;
+int stepperPin_M4 = 7;
+int dirPin_M5 = 4;
+int stepperPin_M5 = 5;
+int buttonPin_M1 = 0;
+int buttonState_M1 = 0;
+int buttonPin_M2 = 0;
+int buttonState_M2 = 0;
+int buttonPin_M3 = 0;
+int buttonState_M3 = 0;
+int buttonPin_M4 = 0;
+int buttonState_M4 = 0;
+int buttonPin_M5 = 0;
+int buttonState_M5 = 0;
+int zero = 0;
+int one = 32;
+int maintenance = 15;
+int count = 0;
+void setup() {
+ pinMode(dirPin_M1, OUTPUT);
+ pinMode(stepperPin_M1, OUTPUT);
+ pinMode(dirPin_M2, OUTPUT);
+ pinMode(stepperPin_M2, OUTPUT);
+ pinMode(dirPin_M3, OUTPUT);
+ pinMode(stepperPin_M3, OUTPUT);
+ //pinMode(dirPin_M4, OUTPUT);
+ //pinMode(stepperPin_M4, OUTPUT);
+ //pinMode(dirPin_M5, OUTPUT);
+ //pinMode(stepperPin_M5, OUTPUT);
+ pinMode(buttonPin_M1, INPUT);
+ pinMode(buttonPin_M2, INPUT);
+ pinMode(buttonPin_M3, INPUT);
+// pinMode(buttonPin_M4, INPUT);
+// pinMode(buttonPin_M5, INPUT);
+ Serial.begin(9600);
+}
+
+void reachedOne(int pin) {
+  digitalWrite(pin, true);
+  // digitalWrite(dirPin_M1, true);
+  // digitalWrite(dirPin_M2, true);
+  // digitalWrite(dirPin_M3, true);
+  // digitalWrite(dirPin_M4, false);
+  // digitalWrite(dirPin_M5, false);
+  while (count > zero) {
+    oneRev(pin, 1);
+    count -= 1;
+    Serial.print(count);
+  }
+ }
+
+boolean check(int num, int pin){
+  if (num < one and num > zero)
+    return true;
+  else {
+    if (num == one)
+      reachedOne(pin);
+    return false;
+   }
+}
+
+void oneRev(int pin, int rev) {
+  for (int i=0; i<200*rev; i++) {
+    digitalWrite(pin, HIGH);
+    // digitalWrite(stepperPin_M1, HIGH);
+    // digitalWrite(stepperPin_M2, HIGH);
+    // digitalWrite(stepperPin_M3, HIGH);
+    // digitalWrite(stepperPin_M4, HIGH);
+    // digitalWrite(stepperPin_M5, HIGH);
+    delayMicroseconds(2000);
+    digitalWrite(pin, LOW);
+    // digitalWrite(stepperPin_M1, LOW);
+    // digitalWrite(stepperPin_M2, LOW);
+    // digitalWrite(stepperPin_M3, LOW);
+    // digitalWrite(stepperPin_M4, LOW);
+    // digitalWrite(stepperPin_M5, LOW);
+    delayMicroseconds(2000);
+  }
+}
+
+void step(boolean dir, int pin, int rev){
+  digitalWrite(pin, dir);
+  // digitalWrite(dirPin_M1, dir);
+  // digitalWrite(dirPin_M2, dir);
+  // digitalWrite(dirPin_M3, dir);
+  // digitalWrite(dirPin_M4, dir);
+  // digitalWrite(dirPin_M5, dir);
+  delay(500);
+  if (dir) {
+    if (check(count+1, pin)) {
+      Serial.println("Here");
+      count += 1;
+      oneRev(pin, rev);
+    }
+  }
+  else {
+    if (check(count-1, pin)) {
+      Serial.println("###Here###");
+      count -= 1;
+      oneRev(pin, rev);
+    }
+  }
+}
+
+void randomSteps() {
+  int randNum = one+ rand() / (RAND_MAX / (zero-one+1)+1);
+  bool dir = true;
+  if (randNum % 2) {
+    dir = false;
+  }
+  step(dir, randNum);
+}
+
+void fall(int dirPin, int stepperPin) {
+  digitalWrite(dirPin, false);
+  // digitalWrite(dirPin_M1, false);
+  // digitalWrite(dirPin_M2, false);
+  // digitalWrite(dirPin_M3, false);
+  oneRev(stepperPin, 32);
+}
+
+boolean button(int buttonState) {
+  buttonState = digitalRead(buttonPin);
+  if (buttonState = HIGH)
+    return true;
+}
+
+void loop(){
+  if (button(buttonState_M1))
+    fall(dirPin_M1, stepperPin_M1);
+    
+  if (button(buttonState_M2))
+    fall(dirPin_M2, stepperPin_M2);
+  
+  if (button(buttonState_M3))
+    fall(dirPin_M3, stepperPin_M3);
+  
+  if (button(buttonState_M4))
+    fall(dirPin_M4, stepperPin_M4);
+  
+  if (button(buttonState_M5))
+    fall(dirPin_M5, stepperPin_M5);
+ // randomSteps();
+ // fall();
+}
